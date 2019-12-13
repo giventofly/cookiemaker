@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-   
+    const cordefundo = document.getElementById('cordefundo');
+    cordefundo.value = '';
+    const cortexto = document.getElementById('cordetexto');
+    cortexto.value = '';
+    const corfundobotao = document.getElementById('corfundobotao');
+    corfundobotao.value = '';
+    const cortextobotao = document.getElementById('cortextobotao');
+    cortextobotao.value = '';
+    const textoinfo = document.getElementById('textoinfo');
+    textoinfo.value = '';
+    const textobotao = document.getElementById('textobotao');
+    textobotao.value = '';
 
     document.getElementById('gerar').addEventListener('click', function(e){
       e.preventDefault();
-      const cordefundo = document.getElementById('cordefundo');
-      cordefundo.value = '';
-      const cortexto = document.getElementById('cordetexto');
-      cortexto.value = '';
-      const corfundobotao = document.getElementById('corfundobotao');
-      corfundobotao.value = '';
-      const cortextobotao = document.getElementById('cortextobotao');
-      cortextobotao.value = '';
-      const textoinfo = document.getElementById('textoinfo');
-      textoinfo.value = '';
-      const textobotao = document.getElementById('textobotao');
-      textobotao.value = '';
+      
       let color_fundobotao = corfundobotao.value || "#120836";
       let color_textobotao = cortextobotao.value || "white";
       let color_fundo = cordefundo.value || "white";
