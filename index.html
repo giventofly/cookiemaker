@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+<!-- cookie maker v1.0 by josé moreira. -->
+<body>
+  <div class="content">
+
+  
+  <h1>ADDUP easy cookie maker</h1>
+  <p>Insira os campos e clique em gerar, aparecerá o codigo a copiar e inserir na página, a classe será gerada automaticamente para evitar conflitos e o js está já linted e transpiled usando babel.</p>
+  <div class="options">
+    <div class="title">Opções de configuração</div>
+    <label for="">Cor de fundo<input type="text" placeholder="#xxxxx" id="cordefundo"></label>
+    <label for="" class="nomarginright">Cor texto<input id="cordetexto" type="text" placeholder="#AAAAAA"></label>
+    <label for="">Cor fundo botão (opcional) <input type="#AAAAAA" id="corfundobotao"></label>
+    <label for="" class="nomarginright">Cor texto botão (opcional) <input id="cortextobotao" type="#AAAAAA"></label>
+    <textarea name="" placeholder="Texto de informação (opcional) pode ter html" id="textoinfo"></textarea>
+    <textarea class="small" name="" placeholder="Texto do botão (opcional)" id="textobotao"></textarea>
+  </div>
+  <a href="" class="btn" id="gerar">Gerar código</a>
+  <p>Copiar e colar, idealmente após o footer mas dentro do body (será copiado automaticamente para a área de transferência).</p>
+  <div class="code">
+    <div class="title">Código a copiar e colar</div>
+    <div id="code"></div>
+  </div>
+  <a href="https://addup.pt" class="byaddup">cookiemaker by addup</a>
+  <div class="addupcookie">
+    <div class="addupcookie__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore officiis ducimus at, soluta ipsam voluptatibus recusandae fuga perferendis! Ut minus adipisci, quibusdam accusantium iste hic delectus. Temporibus, tenetur nobis.</div>
+    <a href="#" class="addupcookie__btn">OK</a>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1a2f;
+  color: #FEFEFC;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  padding-bottom: 100px;
+  width: 100%;
+  position: relative;
+}
+
+body h1, body h2, body h3 {
+  color: #fccd0a;
+  text-transform: uppercase;
+}
+
+body h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+body p {
+  line-height: 1.4;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #FEFEFC;
+  max-width: 700px;
+}
+
+body a.btn {
+  background-color: #8a0e16;
+  color: #FEFEFC;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 15px 35px;
+  border-radius: 0.3rem;
+  margin-bottom: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+body a.byaddup {
+  text-decoration: underline;
+  font-weight: 400;
+  color: #fccd0a;
+  font-size: 1rem;
+  margin-top: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+body .options {
+  margin: 50px 0;
+  background-color: #FEFEFC;
+  padding: 25px;
+  border-radius: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 700px;
+  -webkit-box-shadow: 5px 5px 1px 2px rgba(8, 23, 32, 0.7);
+          box-shadow: 5px 5px 1px 2px rgba(8, 23, 32, 0.7);
+  color: #34719c;
+  position: relative;
+  padding-top: 50px;
+}
+
+body .options label {
+  width: calc(50% - (25px / 2));
+  margin-right: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0d1a2f;
+  margin-bottom: 15px;
+}
+
+body .options label input {
+  width: 100%;
+  padding: 5px;
+  font-size: 0.9rem;
+  border: solid 2px #0d1a2f;
+  border-radius: 0.3rem;
+  color: #0d1a2f;
+}
+
+body .options label.nomarginright {
+  margin-right: 0;
+}
+
+body .options textarea {
+  padding: 5px;
+  font-size: 0.9rem;
+  border: solid 2px #0d1a2f;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  border-radius: 0.3rem;
+  color: #0d1a2f;
+}
+
+body .options textarea.small {
+  height: 35px;
+}
+
+body .code {
+  padding: 35px;
+  padding-top: 50px;
+  position: relative;
+  border-radius: 0.3rem;
+  background-color: #FEFEFC;
+  color: #0d1a2f;
+  font-size: 0.8rem;
+  margin-top: 50px;
+  max-width: 700px;
+}
+
+body .title {
+  position: absolute;
+  top: -25px;
+  left: 25px;
+  background-color: #fccd0a;
+  color: #0f2241;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  padding: 15px 35px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+body .content {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.addupcookie {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9999;
+  display: none;
+}
+
+.addupcookie.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.addupcookie__text {
+  color: black;
+  font-size: 1rem;
+  max-width: 700px;
+  line-height: 1.4;
+  margin-right: 25px;
+}
+
+.addupcookie__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: #120836;
+  color: white;
+  border-radius: 0.3rem;
+}
+/*# sourceMappingURL=style.css.map */
