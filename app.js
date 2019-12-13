@@ -45,8 +45,5 @@ document.addEventListener("DOMContentLoaded", function () {
                       .${addclass}{position:fixed;bottom:0;left:0;width:100%;background-color:${color_fundo};padding:25px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:9999;display:none}.${addclass}.active{display:-webkit-box;display:-ms-flexbox;display:flex}.${addclass}__text{color:${color_texto};font-size:1rem;max-width:700px;line-height:1.4;margin-right:25px}.${addclass}__btn{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:15px 25px;font-size:1rem;text-decoration:none;font-weight:700;background-color:${color_fundobotao};color:${color_textobotao};border-radius:0.3rem}
                     </style>`;
       document.getElementById('code').innerText = '<!-- addupcookie maker -->' + html + style + js + '<!-- addupcookie maker -->';
-      var copyText = document.getElementById('code');
-      copyText.select();
-      document.execCommand("copy");
     });
 });
