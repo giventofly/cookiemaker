@@ -4,25 +4,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById('gerar').addEventListener('click', function(e){
       e.preventDefault();
-      const cordefundo = document.getElementById('cordefundo').value;
+      const cordefundo = document.getElementById('cordefundo');
       cordefundo.value = '';
-      const cortexto = document.getElementById('cordetexto').value;
+      const cortexto = document.getElementById('cordetexto');
       cortexto.value = '';
-      const corfundobotao = document.getElementById('corfundobotao').value;
+      const corfundobotao = document.getElementById('corfundobotao');
       corfundobotao.value = '';
-      const cortextobotao = document.getElementById('cortextobotao').value;
+      const cortextobotao = document.getElementById('cortextobotao');
       cortextobotao.value = '';
-      const textoinfo = document.getElementById('textoinfo').value;
+      const textoinfo = document.getElementById('textoinfo');
       textoinfo.value = '';
-      const textobotao = document.getElementById('textobotao').value;
+      const textobotao = document.getElementById('textobotao');
       textobotao.value = '';
-      let color_fundobotao = corfundobotao || "#120836";
-      let color_textobotao = cortextobotao || "white";
-      let color_fundo = cordefundo || "white";
-      let color_texto = cortexto || "black";
-      let texto_geral = textoinfo || "Este site pode utilizar Cookies para manter informação do visitante, permitindo determinar as suas preferências, auxiliar no preenchimento de formulários, permitir o acesso a áreas privadas do website onde seja necessária autenticação, bem como recolher indicadores de performance, origem e horário dos acessos ao website.";
-      let texto_botao = textobotao || "aceito";
-      const addclass = 'addupcookie_' + Math.floor(Math.random() * Math.floor(1000)) + '_';
+      let color_fundobotao = corfundobotao.value || "#120836";
+      let color_textobotao = cortextobotao.value || "white";
+      let color_fundo = cordefundo.value || "white";
+      let color_texto = cortexto.value || "black";
+      let texto_geral = textoinfo.value || "Este site pode utilizar Cookies para manter informação do visitante, permitindo determinar as suas preferências, auxiliar no preenchimento de formulários, permitir o acesso a áreas privadas do website onde seja necessária autenticação, bem como recolher indicadores de performance, origem e horário dos acessos ao website.";
+      let texto_botao = textobotao.value || "aceito";
+      const addclass = 'consentcookie_' + Math.floor(Math.random() * Math.floor(1000)) + '_';
       const html = `<div class="${addclass}">
                       <div class="${addclass}__text">${texto_geral}</div>
                       <a href="#" class="${addclass}__btn">${texto_botao}</a>
